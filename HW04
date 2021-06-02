@@ -9,17 +9,17 @@ a = int(input())
 b = int(input())
 c = int(input())
 if a*b != c:
- print(False)
+ print(False, "a умножить на b равно c")
 if a*b == c:
-    print(True)
+    print(True, "a умножить на b равно c")
 if a/b != c:
-    print(False)
+    print(False, "a разделить на b равно c")
 if a/b == c:
-    print(True)
+    print(True, " a разделить на b равно c")
 if a**b != c:
-    print(False)
+    print(False, "a в степени b равно c")
 if a**b == c:
-    print(True)
+    print(True, "a в степени b равно c")
 
  
 
