@@ -10,12 +10,16 @@ for i, a in enumerate(word):
   if index%2 == 0 and a not in "ак":
       print(index,a)
 word = input("Введите слово:")
-if a != "з" and a != "я":
- for i, a in enumerate(word):
-        print(word[-(i + 1)])
-word = input("Введите слово:")
+for i, n in enumerate(word):
+    if word[-(i + 1)] != "я" and word[-(i + 1)] != "з":
+     print(word[-(i + 1)])
+
+
+
 n = int (input("Введите число:"))
-if word != "программирование":
- while n > 0 :
+while n > 0 :
+  word = input("Enter your word:")
+  if word == "programming" :
+      break
   n -= 1
-  print(input("Введите слово:"))
+  print(word)
