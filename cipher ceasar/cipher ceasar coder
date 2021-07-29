@@ -1,0 +1,11 @@
+word = input("введите слово:")
+al = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+s = ""
+for w in word:  
+    for i,l in enumerate(al):
+        index = i + 1
+        if w == l:
+            if index >= len(al):
+                index = index - len(al)
+            s = s + al[index]
+print (s)
